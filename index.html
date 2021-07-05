@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- MY ART -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- MY MAGIC -->
+    <script src="assets/javascript/script.js"></script>
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid ">
+                <span class="navbar-text">
+                    Desafio - Uso de variables y operadores
+                    aritméticos
+                </span>
+                <small class="text-danger">Los datos solicitados no son validados, por favor ingrese solamente NUMEROS </small>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container mt-2 bg-light mb-2  rounded">
+        <ul>
+            <li>
+                Realizar el diagrama de flujo para las siguientes operaciones matemáticas: Suma,
+                Resta, División, Multiplicación y el módulo de un número, partiendo de dos números
+                ingresados por el usuario.
+<br>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#item1"
+                    aria-expanded="false" aria-controls="item1">
+                    Mostrar
+                </button>
+            </li>
+        </ul>
+        <div id="item1" class="container p-4  collapse ">
+            <img class="w-75 mx-auto" src="assets/imgs/Diagramas de flujo.png" alt="">
+        </div>
+    </section>
+    <section class="container bg-light mb-2  rounded">
+        <ul>
+            <li>
+                Realizar operaciones con dos números.
+                Pedir al usuario que ingrese dos números diferentes y mayores a cero. Para ambos
+                números, calcular lo siguiente:
+                ● Suma
+                ● Resta
+                ● División
+                ● Multiplicación
+                ● Módulo
+                <br>
+
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#item2"
+                    aria-expanded="false" aria-controls="item2">
+                    Mostrar
+                </button>
+            </li>
+        </ul>
+        <div id="item2" class="container p-4  collapse ">
+            <button id="item2-btn" class="btn btn-primary">INICIAR</button>
+
+            <table class="table w-50">
+                <thead>
+
+                    <tr>
+                        <th>Primer numero</th>
+                        <th id="item2-numero1">x</th>
+                    </tr>
+                    <tr>
+                        <th>Segundo numero</th>
+                        <th id="item2-numero2">y</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Suma</td>
+                        <td id="item2-suma">y</td>
+                    </tr>
+                    <tr>
+                        <td>Resta</td>
+                        <td id="item2-resta">y</td>
+                    </tr>
+                    <tr>
+                        <td>Multiplicación</td>
+                        <td id="item2-multiplicacion">y</td>
+                    </tr>
+                    <tr>
+                        <td>Divicion</td>
+                        <td id="item2-divicion">y</td>
+                    </tr>
+                    <tr>
+                        <td>Modulo</td>
+                        <td id="item2-modulo">y</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="container bg-light mb-2  rounded">
+        <ul>
+            <li>
+                Crear un programa que pida al usuario ingresar la temperatura en grados Celsius y
+                que la transforme a grados Kelvin y Fahrenheit.
+                Se debe considerar la siguiente información respecto a la equivalencia de las
+                escalas de temperatura:
+                ● 0 Grados Celsius corresponden a 273,15 Kelvin. La fórmula para convertirlos
+                es 0 °C + 273.15 = 273.15 K
+                ● 0 Grados Celsius corresponden a 32 Fahrenheit. La fórmula para convertirlos
+                es (0 °C × 9/5) + 32 = 32 °F
+
+                <br>
+
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#item3"
+                    aria-expanded="false" aria-controls="item3">
+                    Mostrar
+                </button>
+            </li>
+        </ul>
+        <div id="item3" class="container p-4  collapse ">
+            <button id="item3-btn" class="btn btn-primary">INICIAR</button>
+
+            <table class="table w-50">
+                <thead>
+
+                    <tr>
+                        <th>C°</th>
+                        <th id="item3-c">x</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>K°</td>
+                        <td id="item3-k">y</td>
+                    </tr>
+                    <tr>
+                        <td>F°</td>
+                        <td id="item3-f">y</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="container bg-light mb-2  rounded">
+        <ul>
+            <li>
+                Crear un programa que pida al usuario una cantidad de días y que muestre su
+                equivalente en Años, Semanas y Días. Por ejemplo, si el usuario ingresa 373, el
+                resultado debe ser 1 año, 1 semana y 1 día.
+                Se debe considerar lo siguiente:
+                ● 1 año tiene 365 días
+                ● 1 semana tiene 7 días
+                Se recomienda usar la función Math.floor para obtener la parte entera de un número
+                decimal.
+                <br>
+
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#item4"
+                    aria-expanded="false" aria-controls="item2">
+                    Mostrar
+                </button>
+            </li>
+        </ul>
+        <div id="item4" class="container p-4  collapse ">
+            <button id="item4-btn" class="btn btn-primary">INICIAR</button>
+
+            <table class="table w-50">
+                <thead>
+
+                    <tr>
+                        <th>Dias</th>
+                        <th id="item4-dias">x</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Equivalente</td>
+                        <td id="item4-equivalente">y</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="container bg-light mb-2  rounded">
+        <ul>
+            <li>
+                Crear un programa que solicite al usuario 5 números y realice los cálculos que se
+                piden a continuación.
+                ● La suma de todos los números.
+                ● El promedio de los 5 números ingresados
+
+                <br>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#item5"
+                    aria-expanded="false" aria-controls="item5">
+                    Mostrar
+                </button>
+            </li>
+        </ul>
+        <div id="item5" class="container p-4  collapse ">
+            <button id="item5-btn" class="btn btn-primary">INICIAR</button>
+
+            <table class="table w-50">
+                <thead>
+
+                    <tr>
+                        <th>Numeros ingresados</th>
+                        <th id="item5-n1">x</th>
+                        <th id="item5-n2">x</th>
+                        <th id="item5-n3">x</th>
+                        <th id="item5-n4">x</th>
+                        <th id="item5-n5">x</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Suma</td>
+                        <td id="item5-s" colspan="5" >y</td>
+                    </tr>
+                    <tr>
+                        <td>Promedio</td>
+                        <td id="item5-p" colspan="5">y</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</body>
+
+<!-- more BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>
